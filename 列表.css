@@ -1,0 +1,14 @@
+
+
+
+/* list-style:
+         none   去掉原点
+         circle 空心圆
+         decimal 数字
+         square 正方形
+*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent:1em;
+}

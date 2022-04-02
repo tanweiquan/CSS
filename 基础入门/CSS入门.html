@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS入门</title>
+</head>
+<body>
+    <!-- CSS编写规范，每一个声明最好使用分号结尾
+    语法：
+        选择器:{
+            声明1；
+            声明2；
+            声明3；
+        }
+
+    样式可以抽离出来，在css文件中定义一个或多个选择器---外部样式；
+    在html中导入外部样式的方法有两种：
+    1、链接式：
+            <link rel="stylesheet" href="css文件路径">
+
+    2、CSS2.1特有的导入式：(少用，缺点是先加载骨架，再加载样式)
+            <style>
+                @import url("css文件路径")
+            </style>
+    -->
+
+    1、在标签元素中，编写一个style属性，然后编写样式即可
+    行内样式
+    <h1 style="color: aquamarine;">行内样式</h1>
+
+    2、直接在html中写:（style里写css代码）
+    内部样式
+    <style>
+        h2{
+            color:hotpink;
+        }
+    </style>
+    <h2>内部样式</h2>
+
+    3、抽离出样式：
+    外部样式
+    <link rel="stylesheet" href="./Hello.css">
+    <h3>外部样式</h3>
+
+    优先级是就近原则，也就是标签离哪个样式近，就使用谁的样式
+
+</body>
+</html>

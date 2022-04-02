@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接伪类学习</title>
+</head>
+<body>
+    <!-- 超链接伪类 -->
+    <style>
+        /* 未点击的状态 */    
+        a:link{
+         color:gold;
+        }
+        /* 鼠标悬浮的状态 */
+        a:hover{
+            color: chartreuse;
+        }
+        /* 鼠标按住时的状态 */
+        a:active{
+            color:hotpink;
+        }
+        /* 点击后的状态 */
+        a:visited {
+            color: #00FF00;
+        }
+    </style>
+    <a href="#">hello_world</a>
+    <!-- 阴影
+        text-shadow:阴影颜色，水平偏移，垂直偏移，阴影半径
+     -->
+
+    <style>
+        #hello{
+            text-shadow:black,10px,15px,20px;
+        }
+    </style>
+    <p id="hello">hello_css</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>span标签学习</title>
+</head>
+<body>
+    span标签能凸显元素的字
+    <span id="hello">标题1</span>
+    <span id="bye">标题2</span>
+    字体样式
+    <style>
+    #hello{
+        font-family: 楷体,微软雅黑; /* 字体 */
+        color: blueviolet;/* 字体颜色 */
+        font-size:30px; /* 字体大小 */
+        font-weight: bold; /* 字体粗细 */
+    }
+    </style>
+
+
+    <style>
+    #bye{
+        font:oblique bolder 16px "楷体";
+        color: blueviolet
+    }
+    </style>
+
+
+    文本样式：
+    <p>你好，我好，大家好</p>
+    <p class="abc">你好，我好，大家好</p>
+    <style>
+        p{
+            color:brown;
+            text-align: center; /* 对齐方式：居中 */
+        }
+        .abc{
+            color: #000;
+            text-indent: 2em; /* 首行缩进 */
+            background-color: cornflowerblue; /* 文字背景颜色 */
+            height: 60px; /* 块高 */
+            line-height: 60px; /* 行高 */ /* 当行高和块高一致时，行在块中上下居中 */
+            text-decoration: overline; /* 上划线 */
+            text-decoration: line-through; /* 中划线 */
+            text-decoration: underline; /* 下划线 */
+        
+        }
+    </style>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+/* <a href="/xx.pdf" class="hello" id="first">您好</a> */
+/* <a href="/xx.pdf" class="bye" id="ads">您好</a> */
+/* <a href="/xx.pdf" class="go" id="last">您好</a> */
+
+/* 1、属性名，属性名=属性值(正则) 
+    =  绝对等于
+    *= 包含这个元素
+    ^= 以这个元素开头
+    $= 以这个元素结尾
+*/
+/* 选中存在id属性的标签 */
+a[id]{
+    color: beige;
+}
+/* 选中id为last的标签 */
+a[id=last]{
+    color: beige;
+}
+/* 选中class为hello的标签 */
+a[class="hello"]{
+    color: beige;
+}
+/* 选中class包含为he的标签 */
+a[class*="he"]{
+    color: beige;
+}

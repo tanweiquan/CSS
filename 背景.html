@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景学习</title>
+</head>
+<body>
+    <style>
+        
+        div{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid red;/*  边框：边框粗细，边框的样式，边框的颜色 */
+            background-image: url("images/xxx.image"); /* 默认背景图是全部平铺的 */
+            background-position: 100px 15px; /* 图片位置 */
+            background-color: darkkhaki; /* 背景颜色 */
+            opacity: 0.5; /* 不透明级别，0是完全透明，1是不透明 */
+
+        }
+        .div1{
+            background-repeat: no-repeat;/*  背景图不平铺 */
+        }
+        .div2{
+            background-repeat: repeat-x;/*  背景图水平平铺 */
+        }
+        .div3{
+            background-repeat: repeat-y;/*  背景图垂直平铺 */
+        }
+        .div4{
+            /* 背景：颜色，图片，图片位置，平铺方式 */
+            background: red url("images/xxx.image") 100px 10px no-repeat;
+        }
+    </style>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+</body>
+</html>

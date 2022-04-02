@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+</head>
+<body>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+              background-color: cyan;
+              border: 1px solid darkblue;
+        }
+        /* 相对定位 */
+        #first{
+              background-color:brown;
+              border: 1px solid violet;
+              position: relative; /* 相对定位 */
+              top: 100px; /* 相对本块原位置顶部向下100px */
+              left: 100px;/* 相对本块原位置左边向右100px */
+              bottom: 100px; /* 相对本块原位置底部向下100px */
+              right: 100px;/* 相对本块原位置右边向右100px */
+        }
+        /* 绝对定位 */
+        #second{ 
+              background-color:crimson;
+              border: 1px solid seashell;
+              position: absolute;/* 绝对定位，有父块相对父块，没父块相对浏览器 */
+              top: 100px; /* 相对父块/浏览器顶部向下100px */
+              left: 100px;/* 相对父块/浏览器左边向右100px */
+              bottom: 100px; /* 相对父块/浏览器底部向下100px */
+              right: 100px;/* 相对父块/浏览器右边向右100px */
+
+        }
+        /* 固定定位 */
+        #bol{
+              background-color:darkkhaki;
+              border: 1px solid salmon;
+              position: fixed; /* 绝对定位，固定在浏览器，滑动浏览也不动 */
+              top: 100px; /* 相对在浏览器的顶部向下100px */
+        }
+    </style>
+    <div id="father">
+        <div id="first">盒子1</div>
+        <div id="second">盒子2</div>
+    </div>
+    <div id="bol">盒子x</div>
+    
+    通过定位还可以实现图层的效果，先定位的在底层，后定位的在面层
+</body>
+</html>

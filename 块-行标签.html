@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display和浮动</title>
+</head>
+<body>
+    块元素包含行元素
+    <style>
+        div{
+        width: 100px;
+        height: 100px;
+        border: 1px,solid,red;
+        color: aqua;
+        display: inline-block; /* block:块属性,inline-block：是块，但可以内联在一行 */
+        
+        }
+        span{
+        width: 100px;
+        height: 100px;
+        border: 1px,solid,red;
+        color: aqua;
+        display: inline-block; /* block:块属性,inline-block：是块，但可以内联在一行*/
+        }
+    </style>
+    <div>块级元素</div>
+    <span>行级元素</span>
+
+    块元素在块元素中浮动 ---左右浮动
+    clear:none; 允许有浮动
+    clear:both; 两侧不允许有浮动
+    clear:left; 左侧不允许有浮动
+    clear:right;右侧不允许有浮动
+    为了防止子块浮动时父级块边框塌陷问题：
+    1、可以使用overflow，当规定的块超过了父级块边框时，增加滑动条
+    2、使用伪类：(推荐)
+               父标签名:after{
+                   content:'';
+                   display:block;
+                   clear:both;
+               }
+    <style>
+        #diva{
+            width: 100px;
+            height: 100px;
+        }
+        .divx{
+            float: left;
+            overflow: hidden;
+        }
+        .divy{
+            float: right;
+        }
+        .divz{
+            float: left;
+            clear: both;
+        }
+    </style>
+    <div id="diva">
+        <div class="divx"></div>
+        <div class="divy"></div>
+        <div class="divz"></div>
+    </div>
+</body>
+</html>
